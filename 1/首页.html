@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.3,minimum-scale=0.4,maximum-scale=0.3,user-scalable=no" />
+  <link rel="shortcut icon" href="./images/altitude.ico">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/base.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="./bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <title>长白山旅游网</title>
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light cbs_header">
+    <a class="navbar-brand mr-5 ml-5" href="#"><img src="./images/cbslogo.png" alt="长白山旅游网" height="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+        <li class="nav-item active mr-4 ml-4">
+          <a class="nav-link" href="./首页.html">首页</a>
+        </li>
+        <li class="nav-item mr-4 ml-4">
+          <a class="nav-link" href="#">历史溯源</a>
+        </li>
+        <li class="nav-item mr-4 ml-4">
+          <a class="nav-link" href="文创.html">长白山文创</a>
+        </li>
+        <li class="nav-item dropdown mr-5 ml-4">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            长白山美景
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" target="_blank" href="西景区.html">西景区</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" target="_blank" href="北景区.html">北景区</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" target="_blank" href="南景区.html">南景区</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mr-4 ml-4">
+          <a class="nav-link" href="留言板.html" target="_blank">留言板</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <img src="./images/fenxiang_2.png" height="30px" class="mr-2">
+        <img src="./images/weixin_1.png" height="30px" alt="" class="mr-2">
+        <img src="./images/QQ_1.png" alt="" height="30px" class="mr-2">
+        <button class="btn mr-2 an text-light" type="submit"><a href="登录.html" target="_blank">登录</a></button>
+        <button class="btn an text-light mr-5" type="submit">注册</button>
+      </form>
+    </div>
+  </nav>
+  <!-- 景区 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="zxm nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <img src="./images/ly_bj1.jpg" alt="">
+          <ul>
+            <li><a href="西景区.html" target="_blank">西景区</a></li>
+            <li><a href="北景区.html" target="_blank">北景区</a></li>
+            <li><a href="南景区.html" target="_blank">南景区</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 轮播图 -->
+      <!-- 轮播图指示器 -->
+      <div class="col-9">
+        <div id="lunbotu" class="carousel slide" data-ride="carousel" data-slide="" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#lunbotu" data-slide-to="0" class="active"></li>
+            <li data-target="#lunbotu" data-slide-to="1"></li>
+            <li data-target="#lunbotu" data-slide-to="2"></li>
+          </ol>
+          <!-- 轮播图结构 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/lbt2.jpg" class="d-block w-100" height="370px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/lbt3.jpg" class="d-block w-100" height="370px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/lbt4.jpg" class="d-block w-100" height="370px" alt="...">
+            </div>
+          </div>
+          <!-- 轮播图左右切换 -->
+          <button class="carousel-control-prev" type="button" data-target="#lunbotu" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#lunbotu" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 长白山概况 -->
+  <div class="ggk">
+    <div class="w mt-3">
+      <img src="./images/gaikuo.png" alt="">
+      <div class="d mt-5 row">
+        <div class="col-2">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active gk_tab" id="v-pills-home-tab" data-toggle="pill" data-target="#v-pills-home"
+              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">概况</button>
+            <img src="./images/li_bg_1201.png" alt="">
+            <button class="nav-link gk_tab" id="v-pills-profile-tab" data-toggle="pill" data-target="#v-pills-profile"
+              type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">地理位置</button>
+            <img src="./images/li_bg_1201.png" alt="">
+            <button class="nav-link gk_tab" id="v-pills-messages-tab" data-toggle="pill" data-target="#v-pills-messages"
+              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">生态环境</button>
+            <img src="./images/li_bg_1201.png" alt="">
+            <button class="nav-link gk_tab" id="v-pills-settings-tab" data-toggle="pill" data-target="#v-pills-settings"
+              type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">自然资源</button>
+            <img src="./images/li_bg_1201.png" alt="">
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content sjbk" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <p>长白山是欧亚大陆东缘的最高山系,地处吉林省东南部,位邻中国与朝鲜边界。因其主峰多白色浮石和积雪而得名,以其丰饶广袤、博大深厚、独特多样、悠久厚重的自然资源和人文积淀而驰名天下。</p>
+              <p>
+                长白山保护区总面积19.64万公顷,核心区7.58万公顷,长白山系的最高峰是朝鲜境内的白头峰,海拔2,749米。中国境内最高峰白云峰,海拔2,691米,是中国东北的最高峰。长白山植被垂直景观及火山地貌景观是首批进入《中国国家自然遗产、国家自然与文化双遗产预备名录》的国家自然遗产地。曾先后被确定为首批国家级自然保护区、首批国家5A级旅游景区、联合国教科文组织"人与生物圈计划"自然保留地和世界自然保护联盟评定的国际A级自然保护区。长白山及其天池、瀑布、雪雕、林海等等,曾多次入选“吉尼斯”世界之最记录,更有中华十大名山、中国最美的五大湖泊、中国最美的十大森林等等的美誉。长白山在生态、生物、地质和历史等诸多方面都具有突出的普遍价值和卓越的自然品质以及丰富的文化内涵。
+              </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <p>
+                长白山保护开发区管理委员会辖区位于吉林省东南部,行政区域地跨延边朝鲜族自治州的安图县、白山市的抚松县、长白朝鲜族自治县。该区域东南与朝鲜民主主义人民共和国接壤。地理坐标为东经127°28′至128°16′；北纬41°42′至42°25′。全区南北最大长度为128公里,东西最宽达88公里。长白山管委会现驻地池北区（原二道白河镇区）距吉林省省会长春市550公里,距延边州州府延吉市210公里,距延边州安图县城150公里。对外交通联系日趋便捷,现有铁路与池西区和池北区相连,201国道与池西区和池北区相连,302省道与池西区相连；长白山旅游机场的建设完成,由长春通往池西区,由白山市通往池西区,由延吉到池北区高速公路的建设完成,敦白高铁正式通车,长白山保护开发区对外联系将更加便捷。
+              </p>
+              <p>长白山保护开发区规划范围总面积为13478.78平方公里。由外到内包括三个层次,分别是规划指导区、规划管理区和自然保护区。</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <p>
+                长白山有由国际 A级自然保护区组成的保存完好的原始森林,有吉林省省级自然保护区——长白山特有树种长白松构成的长白松自然保护区,还有中国最大的红松母树林原始群落,在长白山海拔1,600
+                -2,000 米
+                的广阔地带珍稀植物和高山花卉繁茂发育,组成的高山大花园堪称东北亚地区各山顶最具特色的自然景观。
+              </p>
+              <p>
+                长白山森林生态系统是亚洲东部保存最为完好的典型的森林生态系统,为人类提供着多方面的生态服务。据统计,长白山保护区森林木材总量约 7.1 * 10 的 8 次方立方米,生态系统年固碳约2.11 * 10 的
+                7
+                次方吨,每年减少水土流失
+                2.83 * 10 的 7次方立方米,水资源承载能力每年约183.16 * 10 的 8 次方吨,另外它还是重要的物种基因库,总体生态服务价值可相当于每年约260.63 * 10 的 8 次方元（人民币）。
+              </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <p>
+                辖区属于受季风影响的温带大陆性山地气候,除具有一般山地气候的特点外,还有明显的垂直气候变化。总的特点是：冬季漫长凛冽,夏季短暂温凉,春季风大干燥,秋季多雾凉爽。年均气温在-7℃至3℃之间,7月份平均气温不超过10℃,1月最冷,月平均气温—20℃左右,最低气温曾出现过零下44℃。年日照时数不足2300小时。无霜期100天左右,山顶只有60天左右。积雪深度一般在50厘米,个别地方可达70厘米。年降水量在700—1400毫米之间,6—9月份降水占全年降水量的60—70％。云雾多,风力大,气压低,是长白山主峰气候的主要特点。尤其是夏季,风云莫测,变化多端。年8级以上大风日数269天,年平均风速为11.7米／秒。年雾凇165天,山顶雾日265天,年均日照数只有100天左右。
+              </p>2021年,全区气温偏高,降水略多。平均气温4.8℃,比常年同期高1.2 ℃,比2020年同期高0.2℃;全区平均总降水量890.8毫米,比常年同期多139毫米,比2020年同期多97.4毫米。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container clearfix">
+    <hr class="bg-success text-success mt-4" />
+    <h3 class="ml-2">长白山STEPS</h3>
+    <hr class="bg-success text-success mt-4" />
+    <ul class="big">
+      <li>
+        <a href="长白山简介.html" target="_blank">
+          <span>
+            <img src="./images/step1.jpg" class="w-100" height="450px">
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="路线.html" target="_blank">
+          <span>
+            <img src="./images/step2.jpg" class="w-100" height="450px">
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="门票.html" target="_blank">
+          <span>
+            <img src="./images/step3.jpg" class="w-100" height="450px">
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container mt-3">
+    <hr class="bg-success text-success mt-4" />
+    <h3 class="ml-2">新闻资讯</h3>
+    <hr class="bg-success text-success mt-4" />
+    <div class="row">
+      <img src="./images/gzbb.jpg" alt="" class="d-block w-100 col-6">
+      <img src="./images/fwzq.jpg" alt="" class="d-block w-100 col-6">
+    </div>
+  </div>
+  <!-- 旅游 -->
+  <div class="R_row1 ly_flex row">
+    <div class="col-4 ly_list">
+      <!-- 旅游动态 -->
+      <h2><img src="./images/ly_tit.png"></h2>
+      <ul>
+        <li>吉林省旅游发展大会举办在即 长白山云顶市集端午节假期重磅回归<span>2024-06-12</span></li>
+        <li>端午节游长白山 感受“22℃的夏天”<span>2024-06-09</span></li>
+        <li>打卡长白山冰雪丝路超级IP 长白山旅游业态蓬勃发展<span>2024-06-09</span></li>
+      </ul>
+    </div>
+    <div class="col-4 ly_list">
+      <!-- 旅游服务 -->
+      <h2><img src="./images/ly_tit1.png"></h2>
+      <ul>
+        <li>[旅游动态]长白山一机游带您开启"自然之歌,春日派对"<span>2024-03-29</span></li>
+        <li>[电话]长白山旅游服务便民电话<span>2024-03-01</span></li>
+        <li>[旅游动态]"龙"重登场！吉地过年游玩攻略戳这里<span>2024-02-12</span></li>
+      </ul>
+    </div>
+    <div class="col-4 ly_list">
+      <!-- 旅游指南 -->
+      <h2><img src="./images/ly_tit2.png"></h2>
+      <ul>
+        <li>今年暑假长白山喊你免费游!<span>2024-06-21</span></li>
+        <li>长白山旅游导览北坡篇<span>2024-05-24</span></li>
+        <li>想好了怎么去长白山吗?这里有不二选择!<span>2024-04-12</span></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 脚部 -->
+  <footer class="foo text-light">
+    <div class="text-center">
+      <img src="images/tb1.png" class="mt-3" height="140px" />
+    </div>
+    <div class="pt-4">
+      <p>Copyright 2023All Rights Reserved.长白山保护开发区行政服务中心承办管理运营 版权所有</p>
+      <p class="text-center">吉ICP09009886号-1<span class="mr-2 ml-2">|</span><img src="images/beian.png"
+          class="mr-2" />吉公网安备22242602000111号</p>
+      <div class="con1">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <ul class="bl">
+          <li>
+            <a href=""><i class="fa fa-qq" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-tencent-weibo" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

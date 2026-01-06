@@ -1,0 +1,425 @@
+/* css初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* 解决图片底缝空白的问题 */
+img {
+    vertical-align: middle;
+}
+
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+}
+
+body {
+    /* position: absolute; */
+    background-color: #f3f5f7;
+}
+
+.cbs_lbt {
+    position: relative;
+    top: 80px;
+    left: 0;
+}
+
+.an {
+    background: #0b4685;
+    height: 35px;
+    font-size: 14px;
+}
+
+.an a {
+    text-decoration: none;
+    color: white;
+}
+
+.float {
+    float: left;
+}
+
+.ly_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ly_bg {
+    background: url('../../images/ly_bg.jpg') no-repeat;
+    padding: 30px 0;
+}
+
+.ly_list {
+    width: 404px;
+}
+
+.ly_list ul li {
+    background: #f8f6f5;
+    position: relative;
+    margin-bottom: 14px;
+    height: 100px;
+    padding: 15px;
+}
+
+.ly_list ul li span {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    color: #999;
+}
+
+.R_row1 {
+    width: 1110px;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 30px 20px;
+}
+
+.w button {
+    width: 98px;
+    height: 40px;
+    line-height: 22px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 7px;
+}
+
+.d img {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.ggk {
+    background: url(../../images/cbs_bg.jpg);
+    height: 520px;
+    padding: 50px 0;
+}
+
+.w {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sjbk {
+    width: 1100px;
+    height: 250px;
+    margin-top: 100px;
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid #d5dce2;
+    position: absolute;
+    left: 10px;
+    top: -110px;
+    line-height: 26px;
+    font-size: 16px;
+    text-indent: 32px;
+}
+
+.overflow {
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 景区 */
+.zxm {
+    position: relative;
+}
+
+.zxm ul {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -46px;
+}
+
+.zxm ul li {
+    width: 124px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto 23px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.zxm ul li a {
+    color: #fff;
+}
+
+.zxm ul li:hover a {
+    color: #2571be;
+}
+
+.zxm ul li:hover {
+    background-color: #fff;
+}
+
+.zxm ul li a:hover {
+    color: #2571be;
+    text-decoration: none;
+}
+
+.bootstrap-frm {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.bootstrap-frm h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+.bootstrap-frm h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.bootstrap-frm label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+.bootstrap-frm label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.bootstrap-frm input[type="text"],
+.bootstrap-frm input[type="email"],
+.bootstrap-frm textarea,
+.bootstrap-frm select {
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.bootstrap-frm select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 15px;
+}
+
+.bootstrap-frm textarea {
+    height: 100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.bootstrap-frm .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+
+.bootstrap-frm .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+.foo {
+    height: 500px;
+    margin: 10px auto;
+    background: url(../../images/footer_bg_20211123.jpg) no-repeat;
+    background-size: cover;
+}
+
+.foo div {
+    margin: 20px auto;
+    width: 700px;
+    padding-top: 40px;
+}
+
+.big li {
+    position: relative;
+    float: left;
+    width: 359px;
+    height: 450px;
+    margin-right: 12px;
+}
+
+.big li:last-child {
+    margin-right: 0;
+}
+
+.big li span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4) url(../../images/jiantou-copy.svg) no-repeat center center;
+    background-size: 100px 220px;
+    opacity: 0;
+    z-index: 1001;
+    transition: all 1s;
+}
+
+.big li span:hover::before {
+    opacity: 1;
+}
+
+/* 设置容器为绝对定位，宽度为100%，高度为100vh，居中对齐，背景为渐变色 */
+.con1 {
+    bottom: -40px;
+    position: absolute;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 在容器前添加一个伪元素，作为背景层，高度为50%，模糊效果为5px */
+.con1::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    /* width: 100%;
+    height: 50%; */
+    z-index: 1;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
+    backdrop-filter: blur(5px);
+}
+
+/* 设置三个颜色块，模糊效果为200px */
+.con1 .color {
+    position: absolute;
+    filter: blur(200px);
+}
+
+/* 设置无序列表为相对定位，层级为2 */
+.bl {
+    top: 1762px;
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+
+/* 设置列表项为相对定位，去除列表样式，设置外边距为10px */
+.bl li {
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+
+/* 设置列表项链接为相对定位，宽度为80px，高度为80px，圆角为10px，居中对齐，无文本装饰，字体颜色为白色，字体大小为32px，边框为白色半透明，阴影效果为0px 5px 45px rgba(0, 0, 0, 0.1)，模糊效果为2px */
+.bl li a {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+/* 鼠标悬停时，将链接向上移动20px */
+.bl li a:hover {
+    transform: translateY(-20px);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 在链接前添加一个伪元素，作为动画效果，宽度为50px，高度为100%，背景色为白色，倾斜45度，向右平移150px */
+.bl li a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(45deg) translateX(150px);
+    transition: all 0.5s;
+}
+
+/* 鼠标悬停时，将伪元素向左平移150px */
+.bl li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}

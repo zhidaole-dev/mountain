@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=0.3,minimum-scale=0.4,maximum-scale=0.3,user-scalable=no" />
+    <link rel="shortcut icon" href="./images/altitude.ico">
+    <title>长白山旅游网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: url(./images/dl.jpg) center 0 no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, .4);
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container h1:hover {
+            background-image: linear-gradient(90deg, #ecf5fc, #014f9c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, #ecf5fc, #d2e3f1, #b8d0e7,
+                    #9ebedc, #84abd1, #6999c7, #4f86bc, #3574b1, #1b61a7, #014f9c);
+            background-size: 200%;
+            animation: streamer 3s linear infinite;
+        }
+
+        @keyframes streamer {
+            0% {
+                background-position: 200%;
+            }
+
+            100% {
+                background-position: 0%;
+            }
+        }
+
+        .btn {
+            cursor: pointer;
+            width: 100%;
+            background-color: #014f9c;
+            color: #fff;
+            padding: 15px;
+            border: 0;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .btn:focus {
+            outline: 0;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .text {
+            margin-top: 30px;
+        }
+
+        .form-control {
+            width: 300px;
+            margin: 20px 0 40px;
+            position: relative;
+        }
+
+        .form-control input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid #fff;
+            display: block;
+            padding: 15px 0;
+            font-size: 18px;
+            color: black;
+        }
+
+        .form-control input:focus {
+            outline: 0;
+            border-bottom-color: lightblue;
+        }
+
+        /* valid检测input有没有填 */
+        .form-control input:valid {
+            border-bottom-color: lightblue;
+        }
+
+        /* Email与password的属性 */
+        .form-control label {
+            position: absolute;
+            left: 0;
+            top: 15px;
+        }
+
+        /* Email与password的动画效果 */
+        .form-control label span {
+            display: inline-block;
+            font-size: 18px;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* +选择器：选择除了自己之外的其它兄弟元素 */
+        .form-control input:focus+label span,
+        .form-control input:valid+label span {
+            transform: translateY(-30px);
+            color: lightblue;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .text span {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>登录</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label>
+                    用户名
+                </label>
+            </div>
+            <div class="form-control">
+                <input type="password" required>
+                <label>
+                    密码
+                </label>
+            </div>
+            <button class="btn">提交</button>
+            <p class="text"><input type="checkbox">已阅读并同意长白山 <span>用户协议</span> 和 <span>隐私政策</span></p>
+        </form>
+    </div>
+    <script>
+        window.onload = function () {
+            const labels = document.querySelectorAll(".form-control label")
+            labels.forEach(label => {
+                label.innerHTML = label.innerText.split('').map((letter, index) => `<span style="transition-delay:${index * 35}ms">${letter}</span>`).join('');
+            });
+        };
+
+    </script>
+</body>
+
+</html>

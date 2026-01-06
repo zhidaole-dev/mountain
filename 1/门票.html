@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.3,minimum-scale=0.4,maximum-scale=0.3,user-scalable=no" />
+    <link rel="shortcut icon" href="./images/altitude.ico">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/base.css">
+    <script src="./bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <title>长白山旅游网</title>
+    <style>
+        .zhishi {
+            height: 50px;
+            line-height: 50px;
+            background: #f4f4f4;
+            border-left: 6px solid #0874d8;
+            text-indent: 27px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .zhishi a {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .zhishi a img {
+            padding-bottom: 10px;
+        }
+
+        .pic {
+            border-radius: 20px;
+            width: 500px;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .text {
+            border-radius: 20px;
+            padding: 30px;
+            font-size: 18px;
+            background: #f4f4f4;
+            border: 1px dashed #d5dce2;
+            width: 580px;
+        }
+
+        .rig {
+            float: right;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+
+        section {
+            margin: auto 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+        }
+
+        .card_1 {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .card_1 .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+        }
+
+        .card_1 .box .img-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card_1 .box .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card_1 .box .con-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+        }
+
+        .card_1 .box .con-box div {
+            color: #fff;
+            padding: 20px;
+            background: linear-gradient(30deg, #ecf5fc, #d2e3f1, #b8d0e7,
+                    #9ebedc, #84abd1, #6999c7, #4f86bc, #3574b1, #1b61a7, #014f9c);
+            transform: translateZ(100px);
+        }
+
+        .card_1 .box .con-box div h2 {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .card_1 .box .con-box div p {
+            font-size: 15px;
+            text-align: justify;
+            margin-top: 5px;
+        }
+
+        .card_1:hover .box {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">长白山门票预订</h1>
+            <p class="lead">长白山的寓意为:长相守,到白头,山为证</p>
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="zhishi mt-4">长白山门票预订 <a href="首页.html"><img src="./images/fanhui4.png" alt="" width="40px"
+                    height="40px"></a>
+        </div>
+        <img src="./images/gpzn.jpg" alt="" class="pic mt-4 mr-2">
+        <div class="mt-4" style="height: 350px;overflow: auto;">
+            <p class="text rig">
+                北景区门票<br>
+                全价票305元/人<br>
+                全价组合票225+80,半价组合票172.5+80,免门票人群买120+80。<br>
+                票价组成:105元+35元+85元+80元=305元<br>
+                ·105元是全价门票(半价门票52.5元/免门票0元)门票包括景点有天池、瀑布、绿渊潭、小天池、地下森林<br>
+                ·35元是班线车票(是指从二道白河镇的北景区集散中心到景区的班线车票,含往返)<br>
+                ·85元是环保大巴车票(是指景区内的交通工具,可以到瀑布,绿渊潭,小天池,换乘中心,地下森林)<br>
+                ·80元是去天池景点的倒站车
+            </p>
+        </div>
+        <div class="mt-4" style="height: 300px; overflow: auto;">
+            <p class="text rig">
+                酉景区门票<br>
+                全价票214元/人<br>
+                全价组合票214,半价人群组合票161.5,免门票人群买109<br>
+                票价组成:105元+85元+24元=214元<br>
+                ·105元是全价门票(半价门票52.5元/免门票0元)<br>
+                门票包括景点有天池、锦江大峡谷、王池、高山花园(每年7月开放)<br>
+                ·85元是环保大巴车票(是指景区内的交通工具,可以到锦江大峡谷,王池,高山花园)<br>
+                ·24元是班线车票(是指从松江河镇的西景区集散中心到景区的班线车票,含往返)
+            </p>
+        </div>
+    </div>
+    <div class="w">
+        <hr class="bg-primary text-primary">
+    </div>
+    <section>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/xjq2_xptc.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>天池主峰</h5>
+                        <p>门票:西坡214元/北坡225元</p>
+                        <p>开放时间:08:00</p>
+                        <p>交通:包车/拼车到达景区</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/ws.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>雾凇漂流</h5>
+                        <p>门票:110-175(包含接送车)</p>
+                        <p>开放时间:早06:00</p>
+                        <p>交通:包车/拼车/自驾</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/hx.png" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>滑雪</h5>
+                        <p>门票:98元</p>
+                        <p>开放时间:08:00</p>
+                        <p>交通:包车/拼车/自驾</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/wq.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>温泉</h5>
+                        <p>门票:168元</p>
+                        <p>开放时间:中午01:00</p>
+                        <p>交通:包车/拼车</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/xr.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>雪人大军</h5>
+                        <p>门票:免费</p>
+                        <p>开放时间:全天</p>
+                        <p>交通:包车/拼车/自驾</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/mt.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>雪地摩托</h5>
+                        <p>门票:135元(西坡景区)</p>
+                        <p>开放时间:08:00</p>
+                        <p>交通:包车/拼车到达景区</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/lh.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>老克里湖</h5>
+                        <p>门票:98元</p>
+                        <p>开放时间:08:00</p>
+                        <p>交通:包车/拼车</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_1">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./images/xl.jpg" alt="">
+                </div>
+                <div class="con-box">
+                    <div>
+                        <h5>雪岭</h5>
+                        <p>门票:65-88</p>
+                        <p>开放时间:08:00</p>
+                        <p>交通:包车/拼车</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light text-dark mt-5 text-center">
+        <br>
+        <p>———— 除了时间纬度，地理纬度上的人和事情更让人沉迷 ————</p>
+        <br>
+    </footer>
+</body>
+
+</html>
